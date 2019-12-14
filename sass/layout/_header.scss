@@ -1,9 +1,8 @@
 .header {
-    background-image: linear-gradient(rgba($color-black,.8), rgba($color-black,.8)),
-    url(../image/header-cover3.jpg);
+    background-image: linear-gradient(rgb(47, 47, 47), rgba(255, 255, 255, 0.2)), url(../image/header-cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     height: 100vh;
     margin-top: -135px;
 
