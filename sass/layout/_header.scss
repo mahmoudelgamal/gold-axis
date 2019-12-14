@@ -1,0 +1,33 @@
+.header {
+    background-image: linear-gradient(rgba($color-black,.8), rgba($color-black,.8)),
+    url(../image/header-cover3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin-top: -135px;
+
+    &__content {
+        font-family: 'Raleway', sans-serif !important;
+        text-align: center;
+        display: flex;
+        color: $color-white;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+
+        h3 {
+            font-size: 30px;
+            line-height: 3;
+        }
+        h1 {
+            font-size: 76px;
+            color: $color-primary;
+        }
+
+        a {
+            height: 50px;
+        }
+    }
+}

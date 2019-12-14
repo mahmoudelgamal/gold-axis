@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 3rem;
 
     &__logo {
         width: 9rem;
@@ -25,7 +25,7 @@
         &:link,
         &:visited,
         &:active {
-            color: $color-grey-dark-3;
+            color: $color-white;
             text-decoration: none;
             transition: all .3s ease-in-out;
         }

@@ -15812,11 +15812,36 @@ body {
   border: none;
   box-shadow: none; }
 
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../image/header-cover3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin-top: -135px; }
+  .header__content {
+    font-family: 'Raleway', sans-serif !important;
+    text-align: center;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; }
+    .header__content h3 {
+      font-size: 30px;
+      line-height: 3; }
+    .header__content h1 {
+      font-size: 76px;
+      color: #A67F05; }
+    .header__content a {
+      height: 50px; }
+
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0; }
+  padding: 3rem; }
   .navigation__logo {
     width: 9rem;
     margin-left: 6rem; }
@@ -15828,7 +15853,7 @@ body {
   .navigation__item {
     margin-right: 2rem; }
   .navigation__link:link, .navigation__link:visited, .navigation__link:active {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     transition: all .3s ease-in-out; }
   .navigation__link:hover {
