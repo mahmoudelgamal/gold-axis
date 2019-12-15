@@ -1,5 +1,7 @@
 .header {
-    background-image: linear-gradient(rgb(47, 47, 47), rgba(255, 255, 255, 0.2)), url(../image/header-cover.jpg);
+    background-image: linear-gradient(rgb(47, 47, 47),
+            rgba(255, 255, 255, 0.2)),
+        url(../image/header-cover2.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -20,6 +22,7 @@
             font-size: 30px;
             line-height: 3;
         }
+
         h1 {
             font-size: 76px;
             color: $color-primary;

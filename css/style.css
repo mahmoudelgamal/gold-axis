@@ -15813,7 +15813,7 @@ body {
   box-shadow: none; }
 
 .header {
-  background-image: linear-gradient(#2f2f2f, rgba(255, 255, 255, 0.2)), url(../image/header-cover.jpg);
+  background-image: linear-gradient(#2f2f2f, rgba(255, 255, 255, 0.2)), url(../image/header-cover2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
