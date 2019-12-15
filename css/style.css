@@ -15774,6 +15774,10 @@ readers do not read off random characters that represent icons */
 html {
   font-size: 62.5%; }
 
+::selection {
+  background-color: #A67F05;
+  color: #fff; }
+
 body {
   font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   font-weight: 400;
