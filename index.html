@@ -11,6 +11,9 @@
     <link rel="manifest" href="image/logo/site.webmanifest">
     <title>Gold Axis</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="css/brands.css">
 </head>
 
 <body>
@@ -26,7 +29,7 @@
         <!-- nav links -->
         <ul class="navigation__nav">
             <li class="navigation__item">
-                <a href="#" class="navigation__link">home</a>
+                <a href="#home" class="navigation__link">home</a>
             </li>
             <li class="navigation__item">
                 <a href="#" class="navigation__link">who we are</a>
@@ -45,14 +48,20 @@
     <!-- end navbar -->
 
     <!-- start header -->
-    <header class="header">
+    <header class="header" id="home">
         <div class="header__content">
-            <h3>We create meaningful experiences with measurable impact worldwide.</h3>
-            <h1>We are Gold Axis</h1>
-            <a href="#"></a>
+            <div class="text-container">
+                <h3>We create meaningful experiences with measurable impact worldwide.</h3>
+                <h1>We are Gold Axis</h1>
+            </div>
+            <a href="#" class="header-btn"><i class="fas fa-chevron-down"></i></a>
         </div>
     </header>
     <!-- end header -->
+
+    <!-- start who we are -->
+    
+    <!-- end who we are -->
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>

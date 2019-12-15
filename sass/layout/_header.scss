@@ -1,7 +1,7 @@
 .header {
     background-image: linear-gradient(rgb(47, 47, 47),
             rgba(255, 255, 255, 0.2)),
-        url(../image/header-cover2.jpg); 
+        url(../image/header-cover2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -13,23 +13,57 @@
         text-align: center;
         display: flex;
         color: $color-white;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: column;
         align-items: center;
         height: 100%;
 
-        h3 {
-            font-size: 30px;
-            line-height: 3;
+        .text-container {
+            margin-top: 8rem;
+
+            h3 {
+                font-size: 30px;
+            }
+
+            h1 {
+                font-size: 76px;
+                color: $color-primary-light;
+                margin-top: 1.5rem;
+            }
         }
 
-        h1 {
-            font-size: 76px;
-            color: $color-primary;
-        }
 
-        a {
-            height: 50px;
+        .header-btn {
+
+            &:link,
+            &:visited,
+            &:active {
+                width: 50px;
+                height: 50px;
+                border: 3px solid #ffffff;
+                font-size: 28px;
+                padding: 2px;
+                border-radius: 50%;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                line-height: 2;
+                transform: translateY(1rem);
+            }
+            
+            .fas {
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover .fas {
+                transform: translateY(.5rem);
+            }
         }
+    }
+}
+
+@media (max-width:1140px) {
+    .header {
+        margin-top: -97px;
     }
 }
