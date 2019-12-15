@@ -40,22 +40,23 @@
             &:active {
                 width: 50px;
                 height: 50px;
-                border: 3px solid #ffffff;
+                border: 1.5px solid #ffffff;
                 font-size: 28px;
                 padding: 2px;
                 border-radius: 50%;
                 text-align: center;
                 text-decoration: none;
                 color: #fff;
-                line-height: 2;
+                line-height: 1.7;
                 transform: translateY(1rem);
             }
             
-            .fas {
+            img {
                 transition: all .3s ease-in-out;
+                height: 28px;
             }
 
-            &:hover .fas {
+            &:hover img {
                 transform: translateY(.5rem);
             }
         }
