@@ -15938,6 +15938,7 @@ body {
 
 @media (max-width: 1140px) {
   .navigation {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 99999;
