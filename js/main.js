@@ -24,3 +24,6 @@ $( document ).ready(function() {
     wow.init();
 });
 
+const year = new Date().getFullYear();
+document.getElementById('year').innerHTML=year
+

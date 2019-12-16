@@ -15846,6 +15846,10 @@ body {
   height: 15rem;
   margin-top: 2rem; }
 
+@media (max-width: 767px) {
+  .about__content {
+    width: 100%; } }
+
 .solution-card {
   display: flex; }
   .solution-card__icon {
@@ -15926,6 +15930,74 @@ body {
   .work-card {
     max-width: 440px;
     margin: 0 auto 1rem; } }
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .contact__title {
+    font-family: "Raleway", sans-serif !important;
+    color: #dca600;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    text-align: center; }
+  .contact__slogen {
+    color: #d8d8d8;
+    font-size: 2rem;
+    width: 70%;
+    margin: auto;
+    text-align: center; }
+  .contact img {
+    height: 26px;
+    align-self: flex-start;
+    margin-right: 2rem; }
+  .contact__links a {
+    display: block;
+    color: #fff;
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 1rem;
+    text-decoration: none; }
+  .contact__address {
+    color: #fff; }
+  .contact__logo {
+    width: 22rem;
+    transform: translateY(-1rem);
+    margin-left: 8rem; }
+
+@media (max-width: 767px) {
+  .contact__slogen {
+    width: 100%; }
+  .contact img {
+    margin-left: 15%; }
+  .contact__logo {
+    display: none; } }
+
+.footer {
+  padding: 1rem 0;
+  background-color: #252525; }
+  .footer__container {
+    display: flex; }
+  .footer .social-media {
+    margin-right: auto; }
+    .footer .social-media a {
+      text-decoration: none; }
+    .footer .social-media img {
+      height: 25px;
+      margin-right: 1rem; }
+  .footer .copy-right {
+    color: #fff;
+    font-size: 15px;
+    text-align: right; }
+
+@media (max-width: 767px) {
+  .footer__container {
+    flex-direction: column; }
+  .footer .social-media {
+    margin: 0 auto 1rem; }
+  .footer .copy-right {
+    text-align: center; } }
 
 .solutions-section .row {
   margin-bottom: 2rem; }
@@ -16069,7 +16141,8 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(../image/solutions2.jpg);
   background-position: center;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
   .solutions-section .solutions__title {
     font-family: "Raleway", sans-serif !important;
     color: #dca600;
@@ -16091,3 +16164,11 @@ body {
     text-transform: capitalize;
     margin-bottom: 2rem;
     text-align: center; }
+
+.contact-section {
+  padding: 7rem 0;
+  background-color: #777;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(../image/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }

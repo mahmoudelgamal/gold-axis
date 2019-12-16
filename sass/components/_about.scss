@@ -28,3 +28,12 @@
         margin-top: 2rem;
     }
 }
+
+@media (max-width:767px) {
+    .about {
+
+        &__content {
+            width: 100%;
+        }
+    }
+}

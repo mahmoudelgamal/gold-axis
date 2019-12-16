@@ -12,6 +12,7 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
 
     .solutions__title {
         font-family: $title-font-family;
@@ -41,5 +42,16 @@
         text-align: center;
 
     }
+
+}
+
+.contact-section {
+    padding: 7rem 0;
+    background-color: $color-grey-dark;
+
+    background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .8)), url(../image/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
