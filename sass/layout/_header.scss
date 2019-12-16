@@ -9,7 +9,7 @@
     margin-top: -135px;
 
     &__content {
-        font-family: 'Raleway', sans-serif !important;
+        font-family: $title-font-family;
         text-align: center;
         display: flex;
         color: $color-white;

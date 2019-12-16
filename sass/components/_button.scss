@@ -1,18 +1,22 @@
-.btn {
+.btn__primary {
 
     &:link,
     &:visited,
     &:active {
         cursor: pointer;
         text-decoration: none;
-        color: $color-white;
-        padding: 1.2rem 5rem;
+        color: $color-primary-light ;
+        padding: 1rem 1.5rem;
         font-weight: bold;
-        font-size: 1.3rem;
-        transition: all .3s;
+        font-size: 1.5rem;
+        transition: all .3s ease-in-out;
+        border: 1px solid $color-primary-light;
+        text-transform: capitalize
     }
 
     &:hover {
+        color: $color-white;
+        background-color: $color-primary-dark;
     }
 
     &:focus {

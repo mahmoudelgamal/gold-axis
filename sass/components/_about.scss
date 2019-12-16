@@ -1,6 +1,6 @@
 .about {
     &__title {
-        font-family: 'Raleway', sans-serif !important;
+        font-family: $title-font-family;
         color: $color-primary-light;
         font-weight: 700;
         font-size: 30px;
@@ -9,7 +9,7 @@
 
     &__slogen {
         color: #707270;
-        font-family: 'Raleway', sans-serif !important;
+        font-family: $title-font-family;
         font-size: 24px;
         margin-bottom: 1.5rem;
     }

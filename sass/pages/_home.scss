@@ -8,13 +8,31 @@
     padding: 7rem 0;
     background-color: $color-grey-dark;
 
-    background-image:linear-gradient(rgba($color-black, .9), rgba($color-black, .8)) , url(../image/solutions2.jpg);
+    background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .8)), url(../image/solutions2.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
 
     .solutions__title {
-        font-family: 'Raleway', sans-serif !important;
+        font-family: $title-font-family;
+        color: $color-primary-light;
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+        text-align: center;
+
+    }
+
+}
+
+.our-work {
+    padding: 7rem 0;
+    background-color: $color-grey-light-1;
+    overflow: hidden;
+
+    &__title {
+        font-family: $title-font-family;
         color: $color-primary-light;
         font-weight: 700;
         font-size: 30px;

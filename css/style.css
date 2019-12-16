@@ -6,6 +6,7 @@
  */
 @import url(../node_modules/animate.css/animate.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -15801,22 +15802,28 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-.btn:link, .btn:visited, .btn:active {
+.btn__primary:link, .btn__primary:visited, .btn__primary:active {
   cursor: pointer;
   text-decoration: none;
-  color: #fff;
-  padding: 1.2rem 5rem;
+  color: #dca600;
+  padding: 1rem 1.5rem;
   font-weight: bold;
-  font-size: 1.3rem;
-  transition: all .3s; }
+  font-size: 1.5rem;
+  transition: all .3s ease-in-out;
+  border: 1px solid #dca600;
+  text-transform: capitalize; }
 
-.btn:focus {
+.btn__primary:hover {
+  color: #fff;
+  background-color: #A67F05; }
+
+.btn__primary:focus {
   outline: 0;
   border: none;
   box-shadow: none; }
 
 .about__title {
-  font-family: 'Raleway', sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
   color: #dca600;
   font-weight: 700;
   font-size: 30px;
@@ -15824,7 +15831,7 @@ body {
 
 .about__slogen {
   color: #707270;
-  font-family: 'Raleway', sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
   font-size: 24px;
   margin-bottom: 1.5rem; }
 
@@ -15865,8 +15872,75 @@ body {
   .solution-card__description {
     color: #fff; }
 
+.work-card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: right;
+  color: #fff;
+  transition: all .1s ease-in-out;
+  overflow: hidden;
+  margin-bottom: 1rem; }
+  .work-card__icon {
+    width: 19px;
+    float: right; }
+    .work-card__icon::after {
+      clear: both; }
+  .work-card__content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    font-family: "Montserrat", sans-serif !important;
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all .3s ease-in-out; }
+  .work-card:hover .work-card__content {
+    transform: translateX(0);
+    opacity: 1; }
+  .work-card__brief {
+    color: #dca600;
+    border-bottom: 1px solid currentColor;
+    font-size: 13px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: .5rem;
+    width: 80%;
+    margin-top: 3rem; }
+  .work-card__title {
+    font-size: 23px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 2rem; }
+  .work-card__description {
+    font-size: 14px;
+    margin-bottom: 2.5rem; }
+
+@media (max-width: 767px) {
+  .work-card__content {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@media (max-width: 567px) {
+  .work-card {
+    max-width: 440px;
+    margin: 0 auto 1rem; } }
+
 .solutions-section .row {
   margin-bottom: 2rem; }
+
+.our-work .row {
+  margin: 0; }
+
+.our-work [class|="col"] {
+  padding-right: 5px;
+  padding-left: 5px; }
+
+@media (max-width: 567px) {
+  .our-work .col-6 {
+    max-width: 100% !important;
+    flex: 0 0 100% !important; } }
 
 .header {
   background-image: linear-gradient(#2f2f2f, rgba(255, 255, 255, 0.2)), url(../image/header-cover2.jpg);
@@ -15876,7 +15950,7 @@ body {
   height: 100vh;
   margin-top: -135px; }
   .header__content {
-    font-family: 'Raleway', sans-serif !important;
+    font-family: "Raleway", sans-serif !important;
     text-align: center;
     display: flex;
     color: #fff;
@@ -15997,7 +16071,20 @@ body {
   background-attachment: fixed;
   background-size: cover; }
   .solutions-section .solutions__title {
-    font-family: 'Raleway', sans-serif !important;
+    font-family: "Raleway", sans-serif !important;
+    color: #dca600;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    text-align: center; }
+
+.our-work {
+  padding: 7rem 0;
+  background-color: #f7f7f7;
+  overflow: hidden; }
+  .our-work__title {
+    font-family: "Raleway", sans-serif !important;
     color: #dca600;
     font-weight: 700;
     font-size: 30px;

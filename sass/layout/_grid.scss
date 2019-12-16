@@ -1,3 +1,17 @@
 .solutions-section .row {
     margin-bottom: 2rem;
 }
+.our-work .row {
+    margin:0 ;
+}
+.our-work [class|="col"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+@media (max-width:567px) {
+    .our-work .col-6 {
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+}
