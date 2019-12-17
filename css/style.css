@@ -16066,7 +16066,22 @@ body {
 
 @media (max-width: 567px) {
   .header {
-    margin-top: -70px; } }
+    margin-top: -70px; }
+  h1 {
+    font-size: 6rem; }
+  h3 {
+    width: 95%;
+    margin: auto; } }
+
+@media (max-width: 375px) {
+  .header__content .header-btn:link, .header__content .header-btn:visited, .header__content .header-btn:active {
+    transform: translateY(2.5rem); } }
+
+@media (max-width: 320px) {
+  .header__content .text-container h1 {
+    font-size: 4.5rem; }
+  .header__content .header-btn:link, .header__content .header-btn:visited, .header__content .header-btn:active {
+    transform: translateY(1.5rem); } }
 
 .navigation {
   display: flex;

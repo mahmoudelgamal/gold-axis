@@ -50,7 +50,7 @@
                 line-height: 1.6;
                 transform: translateY(4rem);
             }
-            
+
             img {
                 transition: all .3s ease-in-out;
                 height: 2.4rem;
@@ -72,5 +72,50 @@
 @media (max-width:567px) {
     .header {
         margin-top: -70px;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width:375px) {
+    .header {
+        &__content {
+            .header-btn {
+
+                &:link,
+                &:visited,
+                &:active {
+                    transform: translateY(2.5rem);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .header {
+        &__content {
+            .text-container {
+                h1 {
+                    font-size: 4.5rem;
+                }
+            }
+
+            .header-btn {
+
+                &:link,
+                &:visited,
+                &:active {
+                    transform: translateY(1.5rem);
+                }
+            }
+        }
     }
 }
