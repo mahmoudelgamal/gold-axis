@@ -9,7 +9,11 @@ html {
     // This defines what 1rem is
     font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
-
+@media (max-width: 567px) {
+    html {
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+}
 
 ::selection {
     background-color: $color-primary-dark;

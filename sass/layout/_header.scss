@@ -22,11 +22,11 @@
             margin-top: 8rem;
 
             h3 {
-                font-size: 30px;
+                font-size: 3rem;
             }
 
             h1 {
-                font-size: 76px;
+                font-size: 7.6rem;
                 color: $color-primary-light;
                 margin-top: 1.5rem;
             }
@@ -38,10 +38,10 @@
             &:link,
             &:visited,
             &:active {
-                width: 50px;
-                height: 50px;
+                width: 5rem;
+                height: 5rem;
                 border: 1.5px solid #ffffff;
-                font-size: 28px;
+                font-size: 2.8rem;
                 padding: 2px;
                 border-radius: 50%;
                 text-align: center;
@@ -53,7 +53,7 @@
             
             img {
                 transition: all .3s ease-in-out;
-                height: 24px;
+                height: 2.4rem;
             }
 
             &:hover img {
@@ -68,3 +68,9 @@
         margin-top: -97px;
     }
 }
+
+// @media (max-width:567px) {
+//     .header {
+
+//     }
+// }

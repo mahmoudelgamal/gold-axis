@@ -15775,6 +15775,10 @@ readers do not read off random characters that represent icons */
 html {
   font-size: 62.5%; }
 
+@media (max-width: 567px) {
+  html {
+    font-size: 56.25%; } }
+
 ::selection {
   background-color: #A67F05;
   color: #fff; }
@@ -15826,17 +15830,17 @@ body {
   font-family: "Raleway", sans-serif !important;
   color: #dca600;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 3rem;
   margin-bottom: 2rem; }
 
 .about__slogen {
   color: #707270;
   font-family: "Raleway", sans-serif !important;
-  font-size: 24px;
+  font-size: 2.4rem;
   margin-bottom: 1.5rem; }
 
 .about__content {
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #707270;
   width: 60%;
   margin: auto;
@@ -15853,8 +15857,8 @@ body {
 .solution-card {
   display: flex; }
   .solution-card__icon {
-    width: 60px;
-    height: 60px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     border: 1px solid #fff;
     color: #fff;
@@ -15866,7 +15870,7 @@ body {
     margin-right: 1.5rem;
     transform: translateY(1rem); }
     .solution-card__icon img {
-      height: 33px; }
+      height: 3.3rem; }
   .solution-card__title {
     font-family: 'Raleway', sans-serif !important;
     color: #dca600;
@@ -16033,16 +16037,16 @@ body {
     .header__content .text-container {
       margin-top: 8rem; }
       .header__content .text-container h3 {
-        font-size: 30px; }
+        font-size: 3rem; }
       .header__content .text-container h1 {
-        font-size: 76px;
+        font-size: 7.6rem;
         color: #dca600;
         margin-top: 1.5rem; }
     .header__content .header-btn:link, .header__content .header-btn:visited, .header__content .header-btn:active {
-      width: 50px;
-      height: 50px;
+      width: 5rem;
+      height: 5rem;
       border: 1.5px solid #ffffff;
-      font-size: 28px;
+      font-size: 2.8rem;
       padding: 2px;
       border-radius: 50%;
       text-align: center;
@@ -16052,7 +16056,7 @@ body {
       transform: translateY(1rem); }
     .header__content .header-btn img {
       transition: all .3s ease-in-out;
-      height: 24px; }
+      height: 2.4rem; }
     .header__content .header-btn:hover img {
       transform: translateY(0.5rem); }
 
