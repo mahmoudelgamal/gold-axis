@@ -28,12 +28,42 @@
             color: $color-white;
             text-decoration: none;
             transition: all .3s ease-in-out;
+
+        
         }
 
         &:hover {
             color: $color-primary-dark;
         }
     }
+
+    .active {
+        color: $color-primary-dark !important;
+        font-weight: bold;
+    }
+
+
+}
+
+#navigation__inner {
+    background-color: $color-white;
+    padding: .5rem 0;
+    font-weight: bold;
+    font-size: 15px;
+
+    .navigation__link {
+
+        &:link,
+        &:visited,
+        &:active {
+            color: #000 ;
+        }
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+    }
+
 }
 
 @media (max-width: 1140px) {
@@ -102,6 +132,8 @@
             transform: translateX(0);
         }
     }
+
+
 }
 
 @media (max-width: 567px) {

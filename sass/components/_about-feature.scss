@@ -1,0 +1,26 @@
+.feature {
+    height: 60vh;
+    background: center / cover fixed no-repeat;
+    background-image: linear-gradient(rgba($color-black, .3),
+            rgba($color-black, .2)),
+        url(../image/about-page/feature01.jpg);
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    &__title {
+        font-size: 3rem;
+        text-transform: capitalize;
+        letter-spacing: 8px;
+        text-shadow: 6px 3px 7px #fff;
+    }
+
+    &__title-sub {
+        font-size: 2rem;
+        letter-spacing: 3px;
+
+    }
+}

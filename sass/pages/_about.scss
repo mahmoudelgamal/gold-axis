@@ -1,0 +1,125 @@
+.about-cover {
+    background: center / cover no-repeat;
+    background-image: linear-gradient(rgba($color-black, .3),
+            rgba($color-black, .2)),
+        url(../image/about-page/header.jpeg);
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    h1 {
+        color: $color-white;
+        font-size: 6rem;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        text-align: center;
+        font-family: lato;
+    }
+}
+
+.about-brief {
+    background: top right / cover no-repeat;
+    background-image: linear-gradient(90deg,
+            rgba($color-white, .9) 0%,
+            rgba($color-white, .9) 50%,
+            transparent 50%),
+        url(../image/about-page/breifing4.jpg);
+    padding: 7rem 0;
+
+    &__container {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media (max-width:767px) {
+    .about-brief {
+        background-image: linear-gradient(90deg,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%,
+        transparent 100%),
+    url(../image/about-page/breifing4.jpg);
+
+        &__container {
+            width: 100%;
+        }
+    }
+}
+.our-statement {
+    padding: 7rem 0;
+    background-color: $color-grey-light-1;
+    text-align: center;
+
+    .title {
+        text-transform: capitalize;
+        font-size: 3.5rem;
+        font-family: lato;
+        color: $color-primary-light;
+        margin-bottom: 4rem;
+
+    }
+
+    &__content {}
+
+    &__icon {
+        height: 7rem;
+        display: block;
+        margin: 0 auto 2rem;
+    }
+
+    &__title {
+        text-transform: capitalize;
+        font-size: 2.8rem;
+        font-family: lato;
+        color: #333;
+        margin-bottom: 1.5rem;
+    }
+
+
+    &__description {
+        font-size: 1.8rem;
+        color: #707270;
+        width: 95%;
+        margin: auto;
+
+        &--last {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-container {
+            display: flex;
+            text-align: center;
+        }
+
+    }
+}
+
+@media (max-width:767px) {
+    .our-statement {
+    
+        &__content {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.defination {
+    padding: 7rem 0;
+    background: center / cover no-repeat;
+    background-image: linear-gradient(rgba(70, 70, 70, 0.9), rgba(101, 71, 3, 0.9)),
+        url(../image/about-page/header.jpeg);
+
+    &__title {
+        text-transform: capitalize;
+        font-size: 3.5rem;
+        font-family: lato;
+        color: $color-primary-light;
+        margin-bottom: 4rem;
+        text-align: center;
+
+    }
+}
