@@ -16,7 +16,7 @@ $( document ).ready(function() {
     var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
         cursorChar: '',
-        typeSpeed: 20
+        typeSpeed: 30
 
     });
 

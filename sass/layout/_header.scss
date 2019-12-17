@@ -48,7 +48,7 @@
                 text-decoration: none;
                 color: #fff;
                 line-height: 1.6;
-                transform: translateY(1rem);
+                transform: translateY(4rem);
             }
             
             img {
@@ -69,8 +69,8 @@
     }
 }
 
-// @media (max-width:567px) {
-//     .header {
-
-//     }
-// }
+@media (max-width:567px) {
+    .header {
+        margin-top: -70px;
+    }
+}
