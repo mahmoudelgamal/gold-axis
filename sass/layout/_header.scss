@@ -94,15 +94,22 @@
 @media (max-width:567px) {
     .header {
         margin-top: -70px;
-    }
 
-    h1 {
-        font-size: 6rem;
-    }
 
-    h3 {
-        width: 95%;
-        margin: auto;
+        &__content {
+            .text-container {
+                h1 {
+                    font-size: 5.6rem;
+                }
+
+                h3 {
+                    width: 95%;
+                    margin: auto;
+                }
+
+
+            }
+        }
     }
 }
 

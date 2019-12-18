@@ -91,6 +91,7 @@
         }
 
         &__nav {
+            position: relative;
             position: fixed;
             background-color: $color-white;
             right: 0;
@@ -131,17 +132,42 @@
         }
 
         .collapse-btn {
-            position: absolute;
+            position: relative;
             right: 4rem;
             margin-bottom: 0px;
             cursor: pointer;
+            width: 34px;
+            height: 30px;
+            
+            .wrapper {
+                width: 100%;
+                height: 100%;
+                .line {
+                    position: absolute;
+                    width: 2.8rem;
+                    height: 4px;
+                    background-color: #343434;
+                    border-radius: 4px;
+                    transition: all cubic-bezier(.26 , .1, .27, 1.55) .35s;
 
-            .line {
-                width: 2.8rem;
-                height: .4rem;
-                background-color: #343434;
-                margin-bottom: 4px;
-                border-radius: 4px;
+                    &.top {
+                        top: 18%;
+                    }
+                    &.middle {
+                        top: 48%;
+                    }
+                    &.bottom {
+                        top: 78%;
+                    }
+                }
+            }
+            .icon.close_ .top {
+                transform: rotate(45deg);
+                top: 48%;
+            }
+            .icon.close_ .middle, .icon.close_ .bottom {
+                transform: rotate(-45deg);
+                top: 48%;
             }
         }
 

@@ -1,17 +1,11 @@
 $(document).ready(function () {
-
-    const btnCollapse = document.querySelector('.collapse-btn')
-    const navigation__nav = document.querySelector('.navigation__nav')
-    const navigation = document.querySelectorAll('.navigation a');
-    console.log(navigation)
-
-    btnCollapse.addEventListener('click', () => {
-        navigation__nav.classList.toggle('open')
-    });
-
-    $('.navigation a').click(function () {
+    // navigation hamburger button
+    $('.navigation a, .collapse-btn').click(function () {
         $('.navigation__nav').toggleClass('open');
+        $('.icon').toggleClass('close_')
     });
+
+
     // smoothe scroll
     var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 500,
@@ -25,17 +19,15 @@ $(document).ready(function () {
         typeSpeed: 30
 
     });
-
+    // wow animation action fire
     var wow = new WOW();
     wow.init();
 
-    // // image gallery
-    // $('#gallery').viewer({
-    // // options here
-    // })
 });
+// image gallery 
 const viewer =new Viewer(document.getElementById('gallery'), {
     title:false
-    });
+});
+    // get year number
 const year = new Date().getFullYear();
 document.getElementById('year').innerHTML = year

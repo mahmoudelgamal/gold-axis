@@ -74,11 +74,16 @@
 
 @media (max-width:767px) {
     .work-card {
+        text-align: center;
         &__content {
             -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
             transform: translateX(0);
             opacity: 1;
+        }
+
+        &__brief {
+            margin: 3rem auto;
         }
     }
 

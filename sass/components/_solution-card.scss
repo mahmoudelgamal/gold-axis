@@ -84,3 +84,22 @@
         color: $color-white;
     }
 }
+
+@media (max-width:767px) {
+    .solution-card {
+        flex-direction: column;
+        text-align: center;
+
+        &--small { 
+            flex-direction: row;
+        }
+        &--medium {
+            &__description {
+                width: 70%;
+            }
+        }
+        &__icon {
+            margin: 0 auto 2rem;
+        }
+    }
+}
