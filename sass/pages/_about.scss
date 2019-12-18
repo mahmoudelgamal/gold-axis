@@ -15,7 +15,7 @@
         text-transform: uppercase;
         letter-spacing: 8px;
         text-align: center;
-        font-family: lato;
+        font-family: $title-font-family;
     }
 }
 
@@ -34,7 +34,7 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:1000px) {
     .about-brief {
         background-image: linear-gradient(90deg,
         rgba($color-white, .9) 0%,

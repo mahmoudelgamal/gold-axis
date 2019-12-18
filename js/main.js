@@ -28,7 +28,14 @@ $(document).ready(function () {
 
     var wow = new WOW();
     wow.init();
-});
 
+    // // image gallery
+    // $('#gallery').viewer({
+    // // options here
+    // })
+});
+const viewer =new Viewer(document.getElementById('gallery'), {
+    title:false
+    });
 const year = new Date().getFullYear();
 document.getElementById('year').innerHTML = year

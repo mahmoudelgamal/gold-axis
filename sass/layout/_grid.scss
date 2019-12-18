@@ -1,9 +1,13 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 .solutions-section .row {
     margin-bottom: 2rem;
 }
+
 .our-work .row {
-    margin:0 ;
+    margin: 0;
 }
+
 .our-work [class|="col"] {
     padding-right: 5px;
     padding-left: 5px;
@@ -12,6 +16,32 @@
 @media (max-width:567px) {
     .our-work .col-6 {
         max-width: 100% !important;
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+    }
+}
+
+.shuffle-imgs {
+    .row {
+        margin: 0;
+
+        [class|="col"] {
+            padding: 0;
+            -webkit-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            height: 250px;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (max-width:567px) {
+    .shuffle-imgs .col-6 {
+        max-width: 100% !important;
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
         flex: 0 0 100% !important;
     }
 }

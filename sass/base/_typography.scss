@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 body {
-    font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    font-family: $default-font-family;
     font-weight: 400;
     font-size: 1.6rem !important;
     // color: $color-grey-dark;

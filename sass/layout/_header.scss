@@ -1,4 +1,12 @@
 .header {
+    background-image: -webkit-gradient(linear,
+            left top, left bottom,
+            from(rgb(47, 47, 47)),
+            to(rgba(255, 255, 255, 0.2))),
+        url(../image/header-cover2.jpg);
+    background-image: -o-linear-gradient(rgb(47, 47, 47),
+            rgba(255, 255, 255, 0.2)),
+        url(../image/header-cover2.jpg);
     background-image: linear-gradient(rgb(47, 47, 47),
             rgba(255, 255, 255, 0.2)),
         url(../image/header-cover2.jpg);
@@ -11,10 +19,18 @@
     &__content {
         font-family: $title-font-family;
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         color: $color-white;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         height: 100%;
 
@@ -48,15 +64,21 @@
                 text-decoration: none;
                 color: #fff;
                 line-height: 1.6;
+                -webkit-transform: translateY(4rem);
+                -ms-transform: translateY(4rem);
                 transform: translateY(4rem);
             }
 
             img {
+                -webkit-transition: all .3s ease-in-out;
+                -o-transition: all .3s ease-in-out;
                 transition: all .3s ease-in-out;
                 height: 2.4rem;
             }
 
             &:hover img {
+                -webkit-transform: translateY(.5rem);
+                -ms-transform: translateY(.5rem);
                 transform: translateY(.5rem);
             }
         }
@@ -92,6 +114,8 @@
                 &:link,
                 &:visited,
                 &:active {
+                    -webkit-transform: translateY(2.5rem);
+                    -ms-transform: translateY(2.5rem);
                     transform: translateY(2.5rem);
                 }
             }
@@ -113,6 +137,8 @@
                 &:link,
                 &:visited,
                 &:active {
+                    -webkit-transform: translateY(1.5rem);
+                    -ms-transform: translateY(1.5rem);
                     transform: translateY(1.5rem);
                 }
             }

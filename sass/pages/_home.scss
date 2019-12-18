@@ -8,6 +8,10 @@
     padding: 7rem 0;
     background-color: $color-grey-dark;
 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color-black, .9)), to(rgba($color-black, .8))), url(../image/solutions2.jpg);
+
+    background-image: -o-linear-gradient(rgba($color-black, .9), rgba($color-black, .8)), url(../image/solutions2.jpg);
+
     background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .8)), url(../image/solutions2.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -48,6 +52,10 @@
 .contact-section {
     padding: 7rem 0;
     background-color: $color-grey-dark;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color-black, .9)), to(rgba($color-black, .8))), url(../image/contact.jpg);
+
+    background-image: -o-linear-gradient(rgba($color-black, .9), rgba($color-black, .8)), url(../image/contact.jpg);
 
     background-image: linear-gradient(rgba($color-black, .9), rgba($color-black, .8)), url(../image/contact.jpg);
     background-position: center;

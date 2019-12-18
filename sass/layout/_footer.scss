@@ -3,10 +3,14 @@
     background-color: #252525;
 
     &__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
+
     .social-media {
         margin-right: auto;
+
         a {
             text-decoration: none;
         }
@@ -27,11 +31,16 @@
 @media (max-width:767px) {
     .footer {
         &__container {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
         }
+
         .social-media {
             margin: 0 auto 1rem;
         }
+
         .copy-right {
             text-align: center;
         }
