@@ -1,3 +1,13 @@
+$(window).on("load", function () {
+    $('body').css('overflow', 'auto');
+    $('.sk-circle').fadeOut(1000, function () {
+        $('.overlay-section').fadeOut(1000, function () {
+            $(this).remove()
+        })
+    })
+
+})
+
 $(document).ready(function () {
     // navigation hamburger button
     $('.navigation a, .collapse-btn').click(function () {
@@ -8,7 +18,7 @@ $(document).ready(function () {
 
     // smoothe scroll
     var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 500,
+        speed: 1000,
         speedAsDuration: true,
     });
 
@@ -16,7 +26,8 @@ $(document).ready(function () {
     var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
         cursorChar: '',
-        typeSpeed: 30
+        typeSpeed: 30,
+        startDelay: 2000,
 
     });
     // wow animation action fire
@@ -24,10 +35,7 @@ $(document).ready(function () {
     wow.init();
 
 });
-// image gallery 
-const viewer =new Viewer(document.getElementById('gallery'), {
-    title:false
-});
-    // get year number
+
+// get year number
 const year = new Date().getFullYear();
-document.getElementById('year').innerHTML = year
+document.getElementById('year').innerHTML = year;
