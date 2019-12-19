@@ -16284,12 +16284,17 @@ body {
     text-transform: capitalize; }
   .navigation__item {
     margin-right: 2rem; }
+  .navigation__link.lang {
+    font-size: 14px; }
   .navigation__link:link, .navigation__link:visited, .navigation__link:active {
     color: #fff;
     text-decoration: none;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out; }
+    .navigation__link:link img, .navigation__link:visited img, .navigation__link:active img {
+      height: 21px;
+      transform: translateY(-1px); }
   .navigation__link:hover {
     color: #A67F05; }
   .navigation .active {

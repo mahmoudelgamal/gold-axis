@@ -29,6 +29,9 @@
     }
 
     &__link {
+        &.lang {
+            font-size: 14px;
+        }
 
         &:link,
         &:visited,
@@ -39,7 +42,10 @@
             -o-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
 
-
+            img {
+                height: 21px;
+                transform: translateY(-1px);
+            }
         }
 
         &:hover {
@@ -212,3 +218,4 @@
     }
 
 }
+
