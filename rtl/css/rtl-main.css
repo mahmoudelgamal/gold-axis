@@ -15789,7 +15789,7 @@ body {
   font-family: "Cairo", sans-serif !important;
   font-weight: 400;
   font-size: 1.6rem !important;
-  overflow: auto; }
+  overflow: hidden; }
 
 body {
   font-family: "Cairo", sans-serif !important; }
