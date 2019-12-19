@@ -16530,17 +16530,28 @@ body {
       font-size: 1.7rem;
       margin-bottom: .5rem; }
   .project-details__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column; }
   .project-details__sub-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .project-details__sub-container div:nth-of-type(2) {
       margin-left: auto;
       margin-right: 10rem;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 24%;
       flex: 0 0 24%; }
 
 @media (max-width: 414px) {
   .project-details__sub-container div:nth-of-type(2) {
     margin-left: auto;
     margin-right: 0rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 26%;
     flex: 0 0 26%; } }
