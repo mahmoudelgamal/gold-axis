@@ -1,12 +1,12 @@
-// $(window).on("load", function () {
-//     $('body').css('overflow', 'auto');
-//     $('.sk-circle').fadeOut(1000, function () {
-//         $('.overlay-section').fadeOut(1000, function () {
-//             $(this).remove()
-//         })
-//     })
+$(window).on("load", function () {
+    $('body').css('overflow', 'auto');
+    $('.sk-circle').fadeOut(1000, function () {
+        $('.overlay-section').fadeOut(1000, function () {
+            $(this).remove()
+        })
+    })
 
-// })
+})
 
 $(document).ready(function () {
     // navigation hamburger button
