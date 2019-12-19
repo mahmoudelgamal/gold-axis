@@ -16719,6 +16719,9 @@ body {
 .defination {
   direction: rtl; }
 
+.solution-card--small {
+  flex-direction: row-reverse; }
+
 .project-details {
   background-color: #f7f7f7;
   padding: 4rem; }
