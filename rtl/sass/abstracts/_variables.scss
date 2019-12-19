@@ -1,0 +1,34 @@
+$site-language: arabic;
+
+// COLORS
+$color-primary-light: #dca600;
+$color-primary-dark: #A67F05;
+
+// $color-secondary: #133463;
+// $color-secondary-light: #194481;
+
+// $color-tertiary: #7ab9e0;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// FONT
+$default-font-size: 1.6rem;
+$default-font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+$title-font-family: 'Lato', sans-serif;
+$work-card-font: 'Montserrat', sans-serif !important;
+$arabic-font-family:  'Cairo', sans-serif !important; 
+
+@if $site-language == arabic {
+    $title-font-family: $arabic-font-family;
+    $default-font-family: $arabic-font-family;
+    $work-card-font:$arabic-font-family;
+}

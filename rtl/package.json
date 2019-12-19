@@ -1,0 +1,20 @@
+{
+  "name": "gold-axis",
+  "version": "1.0.0",
+  "description": "langing page for gold axis",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/rtl-main.css -w"
+  },
+  "author": "elgamal", 
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.4.1",
+    "jquey": "0.0.1-security"
+  }
+}

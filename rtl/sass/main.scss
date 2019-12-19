@@ -1,0 +1,34 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/animate.css/animate.css";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss"; 
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss"; 
+@import "../node_modules/@fortawesome/fontawesome-free/scss/icons"; 
+
+@import "abstracts/functions"; 
+@import "abstracts/mixins"; 
+@import "abstracts/variables"; 
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities"; 
+
+@import "components/button";
+@import "components/about";
+@import "components/solution-card";
+@import "components/work-card";
+@import "components/contact"; 
+@import "components/about-feature"; 
+@import "components/image-gallery"; 
+
+
+@import "layout/footer"; 
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/overlay-louding";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/single-project";
+

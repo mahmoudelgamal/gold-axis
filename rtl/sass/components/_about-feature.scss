@@ -1,0 +1,53 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+.feature {
+    height: 60vh;
+    background: center / cover fixed no-repeat;
+    background-image: -webkit-gradient(linear,
+            left top, left bottom,
+            from(rgba($color-black, .3)),
+            to(rgba($color-black, .2))),
+        url(../image/about-page/feature01.jpg);
+    background-image: -o-linear-gradient(rgba($color-black, .3),
+            rgba($color-black, .2)),
+        url(../image/about-page/feature01.jpg);
+    background-image: linear-gradient(rgba($color-black, .3),
+            rgba($color-black, .2)),
+        url(../image/about-page/feature01.jpg);
+    color: $color-white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-family: $title-font-family;
+    &__title {
+        font-size: 3rem;
+        text-transform: capitalize;
+        letter-spacing: 8px;
+        text-shadow: 3px 11px 7px #6d6d5a;
+        background-color: #988c00;
+        padding: 16px;
+        border-radius: 3px;    }
+
+    &__title-sub {
+        font-size: 2rem;
+        letter-spacing: 3px;
+
+    }
+}
+
+@media (max-width:567px) {
+    .feature {
+        display: none;
+    }
+}

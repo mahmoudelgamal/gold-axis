@@ -1,0 +1,39 @@
+.about {
+    &__title {
+        font-family: $title-font-family;
+        color: $color-primary-light;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__slogen {
+        color: #707270;
+        font-family: $title-font-family;
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__content {
+        font-size: 1.5rem;
+        color: #707270;
+        width: 60%;
+        margin: auto;
+        line-height: 1.8;
+
+    }
+
+    &__logo {
+        height: 15rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:767px) {
+    .about {
+
+        &__content {
+            width: 100%;
+        }
+    }
+}

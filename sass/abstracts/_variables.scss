@@ -1,4 +1,5 @@
 $site-language: english;
+
 // COLORS
 $color-primary-light: #dca600;
 $color-primary-dark: #A67F05;
@@ -24,3 +25,10 @@ $default-font-size: 1.6rem;
 $default-font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
 $title-font-family: 'Lato', sans-serif;
 $work-card-font: 'Montserrat', sans-serif !important;
+$arabic-font-family:  'Cairo', sans-serif !important; 
+
+@if $site-language == arabic {
+    $title-font-family: $arabic-font-family;
+    $default-font-family: $arabic-font-family;
+    $work-card-font:$arabic-font-family;
+}
