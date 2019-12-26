@@ -16172,9 +16172,18 @@ body {
     object-fit: cover;
     display: block;
     cursor: pointer;
-    transition: all .3s ease-in-out; }
+    transition: all .3s ease-in-out;
+    opacity: .9; }
     .gallery__img:hover {
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      opacity: 1; }
+
+@media (max-width: 767px) {
+  .gallery {
+    grid-gap: 1rem;
+    padding: 1rem; }
+    .gallery figure {
+      margin-bottom: 0; } }
 
 .footer {
   padding: 1rem 0;

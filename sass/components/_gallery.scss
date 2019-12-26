@@ -92,9 +92,23 @@
         display: block;
         cursor: pointer;
         transition: all .3s ease-in-out;
+        opacity: .9;
 
         &:hover {
             transform: scale(1.1);
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .gallery {
+    
+        grid-gap: 1rem;
+        padding: 1rem;
+
+        figure {
+            margin-bottom: 0;
         }
     }
 }
