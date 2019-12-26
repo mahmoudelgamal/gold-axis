@@ -14,6 +14,10 @@
 
     grid-gap: 1.5rem;
     padding: 1.5rem;
+    
+    figure {
+        margin-bottom: 0;
+    }
 
     &__item { 
         overflow: hidden;
