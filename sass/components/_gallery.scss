@@ -92,7 +92,7 @@
         display: block;
         cursor: pointer;
         transition: all .3s ease-in-out;
-        opacity: .9;
+        opacity: .97;
 
         &:hover {
             transform: scale(1.1);
@@ -109,6 +109,10 @@
 
         figure {
             margin-bottom: 0;
+        }
+
+        &__img {
+            opacity: 1;
         }
     }
 }
