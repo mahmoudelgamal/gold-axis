@@ -16240,8 +16240,8 @@ body {
 
 @media (max-width: 767px) {
   .gallery {
-    grid-gap: 1rem;
-    padding: 1rem; }
+    grid-gap: .5rem;
+    padding: .5rem; }
     .gallery figure {
       margin-bottom: 0; }
     .gallery__img {
