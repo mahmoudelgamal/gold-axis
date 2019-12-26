@@ -11,6 +11,7 @@
     <link rel="manifest" href="image/fav-icon/site.webmanifest">
     <title>Golden Axis</title>
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/viewer.min.css">
     <link rel="stylesheet" href="css/rtl-main.css">
 </head>
 
@@ -38,7 +39,7 @@
                 <a href="#solutions" class="navigation__link">خدماتنا</a>
             </li>
             <li class="navigation__item">
-                <a href="#our-project" class="navigation__link">المشاريع</a>
+                <a href="#our-project" class="navigation__link">اعمالنا السابقه</a>
             </li>
             <li class="navigation__item">
                 <a href="#contact-us" class="navigation__link">اتصل بنا</a>
@@ -75,8 +76,6 @@
         <section class="about-section" id="about">
             <div class="container wow fadeIn" data-wow-duration="2s" data-wow-offset="20">
                 <h2 class="about__title">من نحن</h2>
-                <h3 class="about__slogen">رواد صناعة
-                    الفعاليات المبتكرة</h3>
                 <p class="about__content">تأسست شركة "المحور الذهبي" من نخبة المبدعين
                     والمصممين في مجال تنظيم المعارض والمؤتمرات
                     المحلية والعالمية على مر السنين من الخبرة.
@@ -88,7 +87,7 @@
         </section>
         <!-- end who we are -->
 
-        <!-- start solutions  -->
+        <!-- start solutions -->
         <section class="solutions-section" id="solutions">
             <div class="container">
                 <h2 class="solutions__title">خدماتنا</h2>
@@ -227,7 +226,43 @@
         </section>
         <!-- end solutions  -->
 
-        <!-- start our work -->
+        <!-- start all projects -->
+        <section class="our-work wow fadeIn" id="our-project" data-wow-duration="3s" data-wow-offset="150">
+            <h2 class="our-work__title">اعمالنا السابقه</h2>
+            <div class="gallery" id="gallery">
+                <figure class="gallery__item gallery__item--1"><img src="image/all-project/02.jpg" alt="Gallery image 1"
+                        class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--2"><img src="image/all-project/01.jpg" alt="Gallery image 2"
+                        class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--3"><img src="image/all-project/03.jpg" alt="Gallery image 3"
+                        class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--4"><img src="image/all-project/04.jpg" alt="Gallery image 4"
+                        class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--5"><img src="image/all-project/05.jpg" alt="Gallery image 5"
+                        class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--6"><img src="image/all-project/06.png" alt="Gallery image 6"
+                        class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--7"><img src="image/all-project/07.jpg" alt="Gallery image 7"
+                        class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--8"><img src="image/all-project/08.png" alt="Gallery image 8"
+                        class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--9"><img src="image/all-project/09.jpg" alt="Gallery image 9"
+                        class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--10"><img src="image/all-project/10.jpg"
+                        alt="Gallery image 10" class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--11"><img src="image/all-project/11.jpg"
+                        alt="Gallery image 11" class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--12"><img src="image/all-project/12.jpg"
+                        alt="Gallery image 12" class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--13"><img src="image/all-project/13.jpg"
+                        alt="Gallery image 13" class="gallery__img"></figure>
+                <figure class="gallery__item gallery__item--14"><img src="image/all-project/14.jpg"
+                        alt="Gallery image 14" class="gallery__img"></figure>
+            </div>
+        </section>
+        <!-- end all projects -->
+
+        <!-- start our work 
         <section class="our-work wow fadeIn" id="our-project" data-wow-duration="3s" data-wow-offset="150">
             <h2 class="our-work__title">اعمالنا السابقه</h2>
             <div class="row">
@@ -323,7 +358,7 @@
                 </div>
             </div>
         </section>
-        <!-- end our work -->
+        end our work -->
     </main>
     <!-- start contact us -->
     <section class="contact-section" id="contact-us">
@@ -415,7 +450,15 @@
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/typed.min.js"></script>
+    <script src="js/viewer.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // image gallery 
+        const viewer = new Viewer(document.getElementById('gallery'), {
+            title: false
+        });
+    </script>
+
 </body>
 
 </html>
