@@ -102,6 +102,11 @@
                 margin: 0;
             }
         }
+        &__description {
+            direction: rtl;
+         }
+     
+
     }
     .solution-card__title--white {
         font-weight: 400;

@@ -15859,6 +15859,9 @@ body {
   height: 15rem;
   margin-top: 2rem; }
 
+.about__content {
+  direction: rtl; }
+
 @media (max-width: 767px) {
   .about__content {
     width: 100%; } }
@@ -15935,6 +15938,8 @@ body {
     margin-right: 0; }
     .solution-card__icon--small {
       margin: 0; }
+  .solution-card__description {
+    direction: rtl; }
 
 .solution-card__title--white {
   font-weight: 400; }
@@ -16364,6 +16369,9 @@ body {
     font-size: 15px;
     text-align: right; }
 
+.footer .copy-right {
+  direction: rtl; }
+
 @media (max-width: 767px) {
   .footer__container {
     -webkit-box-orient: vertical;
@@ -16469,11 +16477,13 @@ body {
       transform: translateY(0.5rem); }
 
 .header__content .text-container h3 {
-  font-family: "Cairo", sans-serif !important; }
+  font-family: "Cairo", sans-serif !important;
+  direction: rtl; }
 
 .header__content .text-container h1 {
   font-family: "Cairo", sans-serif !important;
-  font-size: 6.5rem; }
+  font-size: 6.5rem;
+  direction: rtl; }
 
 @media (max-width: 1140px) {
   .header {
@@ -16834,6 +16844,15 @@ body {
     margin-bottom: 2rem;
     text-align: center; }
 
+.viewer-title {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  opacity: 1;
+  background-color: #A67F05;
+  padding: 5px 10px;
+  border-radius: 2px; }
+
 .contact-section {
   padding: 7rem 0;
   background-color: #777;
@@ -16925,9 +16944,6 @@ body {
 .defination {
   direction: rtl; }
 
-.solution-card--small {
-  flex-direction: row-reverse; }
-
 .project-details {
   background-color: #f7f7f7;
   padding: 4rem; }
@@ -16972,7 +16988,7 @@ body {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%; }
   .project-details__sub-container div:nth-of-type(2) {
-    margin-right: 2rem;
+    margin-left: 2rem;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%; } }

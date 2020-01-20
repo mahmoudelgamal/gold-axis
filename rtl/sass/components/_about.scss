@@ -29,6 +29,12 @@
     }
 }
 
+@if $site-language == arabic {
+    .about__content {
+        direction: rtl;
+    }
+}
+
 @media (max-width:767px) {
     .about {
 
@@ -37,3 +43,4 @@
         }
     }
 }
+

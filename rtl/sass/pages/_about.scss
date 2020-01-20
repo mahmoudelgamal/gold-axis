@@ -37,17 +37,16 @@
 @media (max-width:1000px) {
     .about-brief {
         background-image: linear-gradient(90deg,
-                rgba($color-white, .9) 0%,
-                rgba($color-white, .9) 100%,
-                transparent 100%),
-            url(../image/about-page/breifing4.jpg);
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%,
+        transparent 100%),
+    url(../image/about-page/breifing4.jpg);
 
         &__container {
             width: 100%;
         }
     }
 }
-
 .our-statement {
     padding: 7rem 0;
     background-color: $color-grey-light-1;
@@ -101,7 +100,7 @@
 
 @media (max-width:767px) {
     .our-statement {
-
+    
         &__content {
             margin-bottom: 2rem;
         }
@@ -125,13 +124,8 @@
     }
 }
 
-@if $site-language==arabic {
+@if $site-language == arabic {
     .defination {
         direction: rtl;
-    }
-
-
-    .solution-card--small {
-        flex-direction: row-reverse;
     }
 }
