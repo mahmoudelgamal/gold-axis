@@ -36,6 +36,7 @@
 
         .text-container {
             margin-top: 8rem;
+            
 
             h3 {
                 font-size: 3rem;
@@ -88,10 +89,12 @@
 @if $site-language == arabic {
     .header__content .text-container h3 {
         font-family: $arabic-font-family;
+        direction: rtl;
     }
     .header__content .text-container h1 {
         font-family: $arabic-font-family;
         font-size: 6.5rem;
+        direction: rtl;
     }
 }
 

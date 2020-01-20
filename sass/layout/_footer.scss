@@ -28,6 +28,11 @@
     }
 }
 
+@if $site-language == arabic {
+    .footer .copy-right {
+        direction: rtl;
+    }
+}
 @media (max-width:767px) {
     .footer {
         &__container {
